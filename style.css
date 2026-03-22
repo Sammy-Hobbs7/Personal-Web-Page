@@ -1,0 +1,165 @@
+:root {
+  --dark-blue: #003459;
+  --cream: #fdf6e3;
+  --text-dark: #003459;
+}
+
+.caladea-regular {
+  font-family: "Caladea", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caladea-bold {
+  font-family: "Caladea", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caladea-regular-italic {
+  font-family: "Caladea", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caladea-bold-italic {
+  font-family: "Caladea", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+}
+
+h1, h2 {
+  font-family: "Caladea", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* HEADER */
+.header {
+  padding: 0 3rem 3rem;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p {
+  margin-top: 0.5rem;
+  color: var(--dark-blue);
+}
+
+.layout {
+   display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: start;   
+}
+
+/* LEFT COLUMN */
+.left {
+  background-color: var(--dark-blue);
+  color: var(--cream);
+  padding: 4rem 3rem;
+}
+
+.left h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.left p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.left-block {
+  margin-bottom: 3rem;
+}
+
+/* RIGHT COLUMN */
+.right {
+  background-color: var(--cream);
+  padding: 4rem 3rem;
+}
+
+.right h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  color: var(--dark-blue);
+}
+
+.right p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.right-block {
+  margin-bottom: 3rem;
+}
+
+/* WORKS */
+.work {
+  margin-bottom: 3rem;
+}
+
+.work img {
+  width: 100%;
+  max-width: 420px;   
+  height: auto;       
+  display: block;
+}
+
+.image-row {
+  background-color: var(--cream);
+  padding: 4rem 3rem;
+   border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.image-grid {
+   max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.work {
+  text-align: left;
+}
+
+.work p {
+   margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #003459; 
+  color: #fdf6e3;            
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
